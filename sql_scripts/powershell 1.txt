@@ -1,0 +1,6 @@
+Собираем контейнер
+docker build -t my-postgres .
+Запускаем
+docker run --name my-postgres-container -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d my-postgres
+Проверяем
+docker ps
